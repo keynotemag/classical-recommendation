@@ -1,0 +1,83 @@
+:root{--black:#111111;--orange:#F26A21;--paper:#FAF9F6;--white:#fff;--gray:#666;--line:#E5E1DB}
+*{box-sizing:border-box} html,body{margin:0;min-height:100%;font-family:-apple-system,BlinkMacSystemFont,"Pretendard","Noto Sans KR",sans-serif;background:#ddd;color:var(--black)}
+body{display:flex;justify-content:center} .app{width:100%;max-width:430px;min-height:100vh;background:var(--paper);overflow:hidden}
+.screen{min-height:100vh;padding:22px 24px 28px;display:flex;flex-direction:column}
+.top{display:flex;justify-content:space-between;align-items:center} .brand{font-size:13px;font-weight:900;letter-spacing:.2em} .small{font-size:10px;color:#888;letter-spacing:.1em}
+.intro{background:var(--black);color:#fff} .intro .brand{color:#fff} .intro .hero{margin:auto 0} .eyebrow,.section-kicker,.type-label{font-size:10px;letter-spacing:.15em;color:var(--orange);font-weight:850}
+h1{font-size:43px;line-height:1.04;letter-spacing:-.06em;margin:16px 0 20px} p{line-height:1.65;margin:0;color:var(--gray)} .intro p{color:#bbb}
+.cta{border:0;background:var(--black);color:#fff;border-radius:999px;padding:16px 20px;font-size:14px;font-weight:800;cursor:pointer;width:100%;margin-top:28px}
+.cta.orange{background:var(--orange)} .intro .cta{background:#fff;color:#111} .intro-foot{display:flex;justify-content:space-between;font-size:9px;letter-spacing:.1em;color:#777}
+.progress{height:3px;background:#e9e5df;margin:20px 0 42px;overflow:hidden} .progress>span{display:block;height:100%;background:var(--orange);transition:.25s}
+.question h2{font-size:28px;line-height:1.22;letter-spacing:-.045em;margin:12px 0 28px} .qnum{font-size:10px;color:var(--orange);font-weight:850;letter-spacing:.12em}
+.answers{display:grid;gap:10px} .answer{border:1px solid var(--line);background:#fff;border-radius:13px;padding:18px;text-align:left;font-size:14px;line-height:1.5;cursor:pointer}
+.answer.selected{border-color:var(--orange);background:#fff7f1;box-shadow:0 0 0 1px var(--orange) inset} .answer .pole{display:block;color:#aaa;font-size:9px;margin-bottom:7px;letter-spacing:.08em}
+.next{margin-top:auto} .next button:disabled{background:#ddd;color:#999}
+.loading{justify-content:center;text-align:center;background:var(--black);color:#fff} .loading p{color:#aaa} .spinner{width:38px;height:38px;border:2px solid #444;border-top-color:var(--orange);border-radius:50%;animation:spin 1s linear infinite;margin:0 auto 24px} @keyframes spin{to{transform:rotate(360deg)}}
+.result{background:var(--paper)} .result-hero{padding:48px 0 24px} .result-hero h2{font-size:49px;line-height:1;margin:10px 0 5px;letter-spacing:-.065em} .type-title{font-family:Georgia,serif;font-size:20px;margin-bottom:18px}
+.tags{display:flex;gap:6px;flex-wrap:wrap} .tag{background:#eee9e1;border-radius:999px;padding:7px 9px;font-size:10px}
+.result-card{border-top:1px solid #111;padding:25px 0 0} .composer{font-size:14px;font-weight:800;margin-top:18px} .piece{font-family:Georgia,serif;font-size:24px;line-height:1.2;margin-top:6px} .reason{font-size:13px;margin-top:15px}
+.listen-note{border-left:2px solid var(--orange);padding:11px 13px;margin-top:20px;display:grid;gap:4px} .listen-note b{font-size:9px;letter-spacing:.13em} .listen-note span{font-size:11px;color:#666;line-height:1.5}
+.listen-btn{display:block;text-align:center;text-decoration:none;margin-top:17px} .rec-title{font-size:11px;letter-spacing:.1em;margin:33px 0 8px}
+.track{padding:14px 0;border-top:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;gap:10px} .track-copy{display:grid;gap:5px} .track-copy small{font-size:8px;color:var(--orange);font-weight:850;letter-spacing:.1em} .track-copy b{font-size:12px;line-height:1.35}
+.play{color:var(--orange);font-size:10px;font-weight:850;text-decoration:none;white-space:nowrap}
+.music-dna{margin-top:30px;border-top:1px solid #111;padding:21px 0} .music-dna p{font-size:10px;margin-top:6px} .dna-row{display:grid;grid-template-columns:46px 1fr 25px;gap:8px;align-items:center;margin-top:14px;font-size:10px} .dna-bar{height:4px;background:#e5e1db;overflow:hidden;border-radius:5px} .dna-bar i{display:block;height:100%;background:var(--orange)} .dna-row b{font-size:9px;text-align:right}
+.actions{display:grid;gap:9px;margin-top:22px} .ghost{border:1px solid #bbb;background:transparent;color:#111;border-radius:999px;padding:14px;font-weight:800;cursor:pointer}
+.disclaimer{font-size:9px;text-align:center;color:#999;line-height:1.5;margin-top:17px!important}
+@media(min-width:431px){.app{box-shadow:0 0 45px #0002}}
+
+.instagram-cta{
+  margin-top:32px;
+  padding-top:24px;
+  border-top:1px solid rgba(17,17,17,.14);
+  text-align:center;
+}
+.instagram-cta p{
+  margin:0 0 12px;
+  font-size:13px;
+  letter-spacing:.02em;
+  color:#666;
+}
+.instagram-cta .ig-handle{
+  margin-bottom:14px;
+  font-size:15px;
+  font-weight:700;
+  color:#111;
+}
+.instagram-btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-width:220px;
+  height:48px;
+  padding:0 20px;
+  border-radius:999px;
+  background:#111;
+  color:#fff !important;
+  text-decoration:none;
+  font-size:14px;
+  font-weight:700;
+  letter-spacing:.01em;
+  transition:transform .15s ease, opacity .15s ease;
+}
+.instagram-btn:active{transform:scale(.98)}
+.instagram-btn:hover{opacity:.9}
+
+.back-question{
+  width:auto !important;
+  margin:14px auto 0 !important;
+  padding:8px 14px !important;
+  background:transparent !important;
+  color:#777 !important;
+  font-size:12px !important;
+  font-weight:600 !important;
+}
+.back-question:hover{color:#111 !important}
+.result-insight{
+  margin-top:28px;padding-top:24px;border-top:1px solid rgba(17,17,17,.14)
+}
+.result-insight h3,.dynamic-dna-title{margin:0 0 12px;font-size:16px}
+.result-insight p{font-size:14px;line-height:1.7;color:#555}
+.insight-list{list-style:none;padding:0;margin:12px 0 0}
+.insight-list li{font-size:13px;color:#444;margin:7px 0}
+.insight-list li::before{content:"✓";color:#F26A21;font-weight:800;margin-right:8px}
+.dynamic-dna{margin-top:28px;padding-top:24px;border-top:1px solid rgba(17,17,17,.14)}
